@@ -121,7 +121,7 @@ for Intel Energy Optimizer (LPMD) daemon
 		0: disable ITMT upon LP-mode enter and re-enable ITMT upon LP-mode exit
 		1: do not touch ITMT setting during LP-mode enter/exit
 	-->
-	<IgnoreITMT>0</IgnoreITMT>
+	<IgnoreITMT>1</IgnoreITMT>
 
 	<!--
 		Copy from intel_llpmd_config_examples.xml
@@ -192,61 +192,61 @@ for Intel Energy Optimizer (LPMD) daemon
 			<PollIntervalIncrement> 500 </PollIntervalIncrement>
 			<MaxPollInterval> 2000 </MaxPollInterval>
 		</State>
-		<State>
-			<ID> 5 </ID>
-			<Name> UTIL_IDLE </Name>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
-			<EntrySystemLoadThres>5</EntrySystemLoadThres>
-			<EnterCPULoadThres>90</EnterCPULoadThres>
-			<IRQMigrate> -1 </IRQMigrate>
-			<EPP> 192 </EPP>
-			<EPB> 8 </EPB>
-			<ActiveCPUs> hfi </ActiveCPUs>
-			<ITMTState> -1 </ITMTState>
-			<MinPollInterval> 1000 </MinPollInterval>
-			<PollIntervalIncrement> 500 </PollIntervalIncrement>
-			<MaxPollInterval> 2000 </MaxPollInterval>
-		</State>
-		<State>
-			<ID> 6 </ID>
-			<Name> UTIL_SUSTAINED </Name>
-			<EntrySystemLoadThres>15</EntrySystemLoadThres>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
-			<IRQMigrate> -1 </IRQMigrate>
-			<EPP> 64 </EPP>
-			<EPB> 6 </EPB>
-			<ActiveCPUs> lp </ActiveCPUs>
-			<ITMTState> -1 </ITMTState>
-			<MinPollInterval> 1000 </MinPollInterval>
-			<PollIntervalIncrement> 500 </PollIntervalIncrement>
-			<MaxPollInterval> 2000 </MaxPollInterval>
-		</State>
-		<State>
-			<ID> 7 </ID>
-			<Name> UTIL_BURSTY </Name>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
-			<EntrySystemLoadThres>50</EntrySystemLoadThres>
-			<IRQMigrate> -1 </IRQMigrate>
-			<EPP> 64 </EPP>
-			<EPB> 8 </EPB>
-			<ActiveCPUs> all </ActiveCPUs>
-			<ITMTState> -1 </ITMTState>
-			<MinPollInterval> 1000 </MinPollInterval>
-			<PollIntervalIncrement> 500 </PollIntervalIncrement>
-			<MaxPollInterval> 2000 </MaxPollInterval>
-		</State>
-		<State>
-			<ID> 8 </ID>
-			<Name> UTIL_BUSY </Name>
-			<IRQMigrate> -1 </IRQMigrate>
-			<EPP> 32 </EPP>
-			<EPB> 6 </EPB>
-			<ActiveCPUs> all </ActiveCPUs>
-			<ITMTState> -1 </ITMTState>
-			<MinPollInterval> 1000 </MinPollInterval>
-			<PollIntervalIncrement> 500 </PollIntervalIncrement>
-			<MaxPollInterval> 2000 </MaxPollInterval>
-		</State>
+<!--		<State>-->
+<!--			<ID> 5 </ID>-->
+<!--			<Name> UTIL_IDLE </Name>-->
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
+<!--			<EntrySystemLoadThres>5</EntrySystemLoadThres>-->
+<!--			<EnterCPULoadThres>90</EnterCPULoadThres>-->
+<!--			<IRQMigrate> -1 </IRQMigrate>-->
+<!--			<EPP> 192 </EPP>-->
+<!--			<EPB> 8 </EPB>-->
+<!--			<ActiveCPUs> hfi </ActiveCPUs>-->
+<!--			<ITMTState> -1 </ITMTState>-->
+<!--			<MinPollInterval> 1000 </MinPollInterval>-->
+<!--			<PollIntervalIncrement> 500 </PollIntervalIncrement>-->
+<!--			<MaxPollInterval> 2000 </MaxPollInterval>-->
+<!--		</State>-->
+<!--		<State>-->
+<!--			<ID> 6 </ID>-->
+<!--			<Name> UTIL_SUSTAINED </Name>-->
+<!--			<EntrySystemLoadThres>15</EntrySystemLoadThres>-->
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
+<!--			<IRQMigrate> -1 </IRQMigrate>-->
+<!--			<EPP> 64 </EPP>-->
+<!--			<EPB> 6 </EPB>-->
+<!--			<ActiveCPUs> lp </ActiveCPUs>-->
+<!--			<ITMTState> -1 </ITMTState>-->
+<!--			<MinPollInterval> 1000 </MinPollInterval>-->
+<!--			<PollIntervalIncrement> 500 </PollIntervalIncrement>-->
+<!--			<MaxPollInterval> 2000 </MaxPollInterval>-->
+<!--		</State>-->
+<!--		<State>-->
+<!--			<ID> 7 </ID>-->
+<!--			<Name> UTIL_BURSTY </Name>-->
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
+<!--			<EntrySystemLoadThres>50</EntrySystemLoadThres>-->
+<!--			<IRQMigrate> -1 </IRQMigrate>-->
+<!--			<EPP> 64 </EPP>-->
+<!--			<EPB> 8 </EPB>-->
+<!--			<ActiveCPUs> all </ActiveCPUs>-->
+<!--			<ITMTState> -1 </ITMTState>-->
+<!--			<MinPollInterval> 1000 </MinPollInterval>-->
+<!--			<PollIntervalIncrement> 500 </PollIntervalIncrement>-->
+<!--			<MaxPollInterval> 2000 </MaxPollInterval>-->
+<!--		</State>-->
+<!--		<State>-->
+<!--			<ID> 8 </ID>-->
+<!--			<Name> UTIL_BUSY </Name>-->
+<!--			<IRQMigrate> -1 </IRQMigrate>-->
+<!--			<EPP> 32 </EPP>-->
+<!--			<EPB> 6 </EPB>-->
+<!--			<ActiveCPUs> all </ActiveCPUs>-->
+<!--			<ITMTState> -1 </ITMTState>-->
+<!--			<MinPollInterval> 1000 </MinPollInterval>-->
+<!--			<PollIntervalIncrement> 500 </PollIntervalIncrement>-->
+<!--			<MaxPollInterval> 2000 </MaxPollInterval>-->
+<!--		</State>-->
 	</States>
 
 </Configuration>
