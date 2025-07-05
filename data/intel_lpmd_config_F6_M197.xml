@@ -83,14 +83,14 @@ for Intel Energy Optimizer (LPMD) daemon
 		from 0 - 100
 		clear both util_entry_threshold and util_exit_threshold to disable util monitor
 	-->
-	<util_entry_threshold>10</util_entry_threshold>
+<!--	<util_entry_threshold>10</util_entry_threshold>-->
 
 	<!--
 		System utilization threshold to exit LP mode
 		from 0 - 100
 		clear both util_entry_threshold and util_exit_threshold to disable util monitor
 	-->
-	<util_exit_threshold>95</util_exit_threshold>
+<!--	<util_exit_threshold>95</util_exit_threshold>-->
 
 	<!--
 		Entry delay. Minimum delay in non Low Power mode to
@@ -134,9 +134,9 @@ for Intel Energy Optimizer (LPMD) daemon
 			<ID> 1 </ID>
 			<Name> WLT_IDLE </Name>
 			<WLTType> 0 </WLTType>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
-			<EntrySystemLoadThres>5</EntrySystemLoadThres>
-			<EnterCPULoadThres>90</EnterCPULoadThres>
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
+<!--			<EntrySystemLoadThres>5</EntrySystemLoadThres>-->
+<!--			<EnterCPULoadThres>90</EnterCPULoadThres>-->
 			<IRQMigrate> -1 </IRQMigrate>
 			<EPP> 192 </EPP>
 			<EPB> 8 </EPB>
@@ -150,9 +150,9 @@ for Intel Energy Optimizer (LPMD) daemon
 			<ID> 2 </ID>
 			<Name> WLT_BATTERY_LIFE </Name>
 			<WLTType> 1 </WLTType>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
-			<EntrySystemLoadThres>10</EntrySystemLoadThres>
-			<EnterCPULoadThres>95</EnterCPULoadThres>
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
+<!--			<EntrySystemLoadThres>10</EntrySystemLoadThres>-->
+<!--			<EnterCPULoadThres>95</EnterCPULoadThres>-->
 			<IRQMigrate> -1 </IRQMigrate>
 			<EPP> 192 </EPP>
 			<EPB> 8 </EPB>
@@ -166,8 +166,8 @@ for Intel Energy Optimizer (LPMD) daemon
 			<ID> 3 </ID>
 			<Name> WLT_SUSTAINED </Name>
 			<WLTType> 2 </WLTType>
-			<EntrySystemLoadThres>30</EntrySystemLoadThres>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
+<!--			<EntrySystemLoadThres>30</EntrySystemLoadThres>-->
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
 			<IRQMigrate> -1 </IRQMigrate>
 			<EPP> 64 </EPP>
 			<EPB> 6 </EPB>
@@ -181,8 +181,8 @@ for Intel Energy Optimizer (LPMD) daemon
 			<ID> 4 </ID>
 			<Name> WLT_BURSTY </Name>
 			<WLTType> 3 </WLTType>
-			<EnterGFXLoadThres>50</EnterGFXLoadThres>
-			<EntrySystemLoadThres>50</EntrySystemLoadThres>
+<!--			<EnterGFXLoadThres>50</EnterGFXLoadThres>-->
+<!--			<EntrySystemLoadThres>50</EntrySystemLoadThres>-->
 			<IRQMigrate> -1 </IRQMigrate>
 			<EPP> 64 </EPP>
 			<EPB> 4 </EPB>
